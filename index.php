@@ -1,4 +1,9 @@
 <?php
+
+require_once 'core/Env.php';
+Env::load();
+
+
 require_once __DIR__ . '/core/Router.php';
 
 // Create the router instance BEFORE loading routes
