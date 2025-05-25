@@ -18,6 +18,10 @@ class Router {
         if (str_starts_with($path, $basePath)) {
             $path = substr($path, strlen($basePath));
         }
+        $basePath = '/hcse-api';
+        if (str_starts_with($path, $basePath)) {
+            $path = substr($path, strlen($basePath));
+        }
 
 
         $method = strtoupper($method);
